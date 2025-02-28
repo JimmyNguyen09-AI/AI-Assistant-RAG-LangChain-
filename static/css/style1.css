@@ -1,0 +1,140 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/*căn chỉnh body*/
+body {
+    display: flex;
+    background-color: #121212;
+    color: white;
+    height: 100vh;
+}
+
+chỉnh sửa slidebar
+.sidebar {
+    width: 300px;
+    background-color: #1e1e1e;
+    padding: 30px 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    color: #b3b3b3;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.sidebar ul li {
+    padding: 12px 0;
+    font-size: 16px;
+    color: #d1d1d1;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar ul li:hover {
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.sidebar .view-plans {
+    margin-top: 30px;
+    width: 100%;
+    padding: 15px;
+    background-color: #292929;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.sidebar .view-plans:hover {
+    background-color: #444;
+}
+
+/*chỉnh sửa background color của sidebar*/
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.chat-header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#chat-box {
+    height: 400px;
+    width: 100%;
+    max-width: 800px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+    border: 1px solid #333;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/*khung chat*/
+.chat-input {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    background-color: #292929;
+    border-radius: 50px;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.chat-input button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.chat-input button:hover {
+    background-color: #45a049;
+}

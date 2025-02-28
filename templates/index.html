@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Clone</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>ChatGPT</h2>
+        <div class="menu">
+            <p>Jimmy's AI Assistant</p>
+            <p>Khám phá GPT</p>
+        </div>
+        <button class="view-plans">Services</button>
+    </div>
+
+    <div class="main-container">
+        <div class="chat-header">
+            <h1>Jimmy's AI Assistant</h1>
+        </div>
+        
+        <div id="chat-box"></div>
+
+        <div class="chat-input-container">
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Nhập tin nhắn...">
+                <div id="filePreviewContainer" class="file-preview-container"></div>
+                <button class="file-upload-button">
+                    <i class="fas fa-paperclip"></i>
+                </button>
+                <input type="file" id="fileInput" style="display: none;">
+                <button id="sendBtn">Gửi</button>
+            </div>
+        </div>
+    </div>
+
+     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
